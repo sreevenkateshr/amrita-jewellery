@@ -154,3 +154,282 @@
         max-width: 100%; /* On smaller screens, cards will take up the full width */
     }
 }
+
+/* Gold sections */
+
+/* Styling for the .gold class */
+/* Ensuring all images inside the cards are the same size */
+.gold .card-img-top {
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* This ensures the image covers the area of the img element without distortion */
+    width: 100%; /* Makes sure the images stretch to fill the width of the container */
+}
+
+/* Card styles */
+.gold .card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gold .card:hover {
+    transform: translateY(-10px); /* Card moves up slightly on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adding shadow for hover effect */
+}
+
+.gold .card-body {
+    padding: 15px;
+}
+
+.gold .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gold .card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button style for WhatsApp enquiry */
+.gold .btn-success {
+    background-color: #25D366; /* WhatsApp color */
+    border-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gold .btn-success:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+}
+/* Styling for Gold Cards */
+
+/* Gold Card container */
+.gold-card {
+    height: 100%;
+}
+
+/* Gold Hover Effect */
+.gold-hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gold-hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Fixed height for the gold card body */
+.gold-card-body {
+    height: 200px; /* Adjust based on your design */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Gold Card Image size */
+.gold-card-img {
+    height: 200px; /* Adjust the height of images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Gold Card Title */
+.gold-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* Gold Card Text */
+.gold-card-text {
+    flex-grow: 1; /* Allow text content to expand but not push the button out */
+}
+
+/* Gold Button (WhatsApp) */
+.gold-btn {
+    margin-top: auto; /* Make sure button is at the bottom of the card */
+    padding: 10px 15px;
+}
+
+/* Silver Sectionss */
+/* Center the heading and description */
+.silver-text-center {
+    text-align: center;
+}
+
+/* Silver Heading */
+.silver-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Silver Description */
+.silver-description {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Ensure all silver cards have the same height and are equally spaced */
+.silver-card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    height: 100%;
+}
+
+/* Silver Card Body */
+.silver-card-body {
+    flex-grow: 1;
+}
+
+/* Set a fixed image size for uniformity */
+.silver-card-img {
+    height: 200px; /* Uniform height for images */
+    object-fit: cover; /* Preserve aspect ratio */
+}
+
+/* Silver Card Title */
+.silver-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* Silver Card Text */
+.silver-card-text {
+    flex-grow: 1; /* Allow text content to expand without affecting layout */
+}
+
+/* Silver Button (WhatsApp) */
+.silver-btn {
+    margin-top: auto; /* Position button at the bottom */
+    padding: 10px 15px;
+}
+
+/* Set consistent card widths for 4 cards per row on medium screens */
+.col-md-3 {
+    flex: 0 0 25%; /* 4 cards per row for medium screens and larger */
+    max-width: 25%;
+}
+
+/* Adjust layout for smaller screens (2 cards per row on small screens) */
+@media (max-width: 767px) {
+    .col-sm-6 {
+        flex: 0 0 50%; /* 2 cards per row for small screens */
+        max-width: 50%;
+    }
+}
+
+/* Hover effect */
+.silver-hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.silver-hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* silver sections */
+
+/* Ensuring all images inside the silver cards are the same size */
+.silver .card-img-top {
+    height: 200px; /* Fixed height for uniform image size */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    width: 100%; /* Fill the width of the card */
+}
+
+/* Card hover effects */
+.silver .card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.silver .card:hover {
+    transform: translateY(-10px); /* Card moves up slightly on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adding shadow for hover effect */
+}
+
+.silver .card-body {
+    padding: 15px;
+}
+
+.silver .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.silver .card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button style for WhatsApp enquiry */
+.silver .btn-success {
+    background-color: #25D366; /* WhatsApp color */
+    border-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.silver .btn-success:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+}
+
+/* Copper sections */
+/* Ensuring all images inside the copper cards are the same size */
+.copper .card-img-top {
+    height: 200px; /* Fixed height for uniform image size */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    width: 100%; /* Fill the width of the card */
+}
+
+/* Card hover effects */
+.copper .card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.copper .card:hover {
+    transform: translateY(-10px); /* Card moves up slightly on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adding shadow for hover effect */
+}
+
+.copper .card-body {
+    padding: 15px;
+}
+
+.copper .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.copper .card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button style for WhatsApp enquiry */
+.copper .btn-success {
+    background-color: #25D366; /* WhatsApp color */
+    border-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.copper .btn-success:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+}
