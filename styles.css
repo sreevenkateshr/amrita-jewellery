@@ -1,0 +1,156 @@
+/* rate sections */
+#rates {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+#rates h4 {
+    margin: 10px 0;
+}
+
+/* whatsapp inegrations  */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.whatsapp-float i {
+    font-size: 30px;
+}
+
+/* malai sections */
+   /* Main product section styling */
+   .product-section {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Ensures the items wrap to the next line when needed */
+    justify-content: space-between; /* Distribute space evenly between items */
+    gap: 20px; /* Adds space between each product */
+}
+
+/* Individual product item styling */
+.product-item {
+    flex: 1 1 calc(25% - 20px); /* Ensures that each item takes up 25% width minus the gap */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.card-content h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Customization form on the right */
+.customization-form {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.customization-content {
+    padding: 10px;
+}
+
+.customization-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customization-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.customization-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.customization-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.customization-form button:hover {
+    background-color: #45a049;
+}
+
+
+/* service sections  */
+/* Reduce the image size */
+.card-img-top {
+    width: 100%;
+    max-width: 300px; /* You can adjust this value to make the images smaller */
+    height: auto;
+    margin: 0 auto; /* Centers the image within the card */
+}
+/* Make the cards more medium-sized */
+.card {
+    max-width: 350px; /* Adjust this value for the card's width */
+    margin: 0 auto; /* Center the cards horizontally */
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* On smaller screens, cards will take up the full width */
+    }
+}
