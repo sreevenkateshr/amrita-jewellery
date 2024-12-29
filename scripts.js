@@ -2,34 +2,42 @@ const apiKey = 'YOUR_API_KEY'; // Replace with your API key
 const apiUrl = ' https://www.goldapi.io/api/status'; // Gold in INR
 const silverApiUrl = ' https://www.goldapi.io/api/status'; // Silver in INR
 
-async function fetchRates() {
-    try {
-        // Fetch gold rate
-        const goldResponse = await fetch(apiUrl, {
-            headers: { 'x-access-token': apiKey }
-        });
-        const goldData = await goldResponse.json();
-        const goldRate = goldData.price;
+    async function fetchRates() {
+        try {
+            const apiKey = "goldapi-3t4pgsm59cqtbo-io"; // Replace with your API key
+            const url = `https://www.goldapi.io/api/XAU/INR`; // Endpoint for gold rate
+            const urlSilver = `https://www.goldapi.io/api/XAG/INR`; // Endpoint for silver rate
 
-        // Fetch silver rate
-        const silverResponse = await fetch(silverApiUrl, {
-            headers: { 'x-access-token': apiKey }
-        });
-        const silverData = await silverResponse.json();
-        const silverRate = silverData.price;
+            const headers = {
+                "x-access-token": apiKey,
+                "Content-Type": "application/json"
+            };
 
-        // Display rates
-        document.getElementById('gold-rate').textContent = `₹${goldRate.toFixed(2)} per gram`;
-        document.getElementById('silver-rate').textContent = `₹${silverRate.toFixed(2)} per gram`;
-    } catch (error) {
-        console.error('Error fetching rates:', error);
-        document.getElementById('gold-rate').textContent = 'Error loading rate';
-        document.getElementById('silver-rate').textContent = 'Error loading rate';
-        // document.getElementById('gold-rate').textContent = '₹5000.00 per gram (default)';
-        // document.getElementById('silver-rate').textContent = '₹65.00 per gram (default)';
+            // Fetch Gold Rate
+            const goldResponse = await fetch(url, { headers });
+            const goldData = await goldResponse.json();
 
+            // Fetch Silver Rate
+            const silverResponse = await fetch(urlSilver, { headers });
+            const silverData = await silverResponse.json();
+
+            // Extract rates (per gram or troy ounce based on API docs)
+            const goldRate = goldData.price; // Adjust if API returns a different key
+            const silverRate = silverData.price; // Adjust if API returns a different key
+
+            // Update HTML
+            document.getElementById("gold-rate").textContent = `₹${goldRate} per gram`;
+            document.getElementById("silver-rate").textContent = `₹${silverRate} per gram`;
+        } catch (error) {
+            console.error("Error fetching rates:", error);
+            document.getElementById("gold-rate").textContent = "Unable to fetch rate.";
+            document.getElementById("silver-rate").textContent = "Unable to fetch rate.";
+        }
     }
-}
+
+    // Call fetchRates on page load
+    document.addEventListener("DOMContentLoaded", fetchRates);
+
 
 function showCustomization(malai) {
     // Show customization form on product click
