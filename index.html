@@ -14,8 +14,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky; top: 0; z-index: 1000;">
         <div class="container-fluid">
-            <!-- Shop Name on the Left -->
-            <a class="navbar-brand" href="#">Amrita Jewellery</a>
+      <!-- Shop Name with Logo -->
+<a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="img/AMRITA JEWELLER LOGO.png" alt="Amrita Jewellery Logo" class="me-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
+    Amrita Jewellery
+</a>
+
             
             <!-- Toggler for Smaller Screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +55,8 @@
         </div>
     </nav>
 </body>
+
+        
  <!-- Home Section -->
     <section id="home" class="vh-100 d-flex align-items-center justify-content-center bg-light">
         <div id="homeCarousel" class="carousel slide w-100" data-bs-ride="carousel">
@@ -127,47 +133,58 @@
     </div>
 </section>
 
-   <!-- About Section -->
-   <section id="about" class="py-5 bg-secondary text-white">
+<!-- About Section -->
+<section id="about" class="py-5 text-white" style="background: url('img/about\ bg.jpg') no-repeat center center/cover; font-family: 'Georgia', serif;">
     <div class="container">
-        <h2 class="text-center">About Me</h2>
+        <h2 class="text-center" style="font-family: 'Arial Black', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+            About Me
+        </h2>
         <div class="row align-items-center mt-4">
             <div class="col-md-4 text-center">
-                <img src="img/gold1.jpg" alt="About Me" class="img-fluid rounded-circle">
+                <img src="img/gold1.jpg" alt="About Me" class="img-fluid rounded-circle shadow">
             </div>
             <div class="col-md-8">
-                <p class="fs-5">I am Murali, a goldsmith with over 25 years of experience in crafting exquisite gold and silver jewelry. Based in Nagercoil, Kanyakumari, I specialize in all kinds of gold and silver works, including traditional designs and custom creations. Additionally, I offer beautiful Malai collections and serve customers across India. My passion for this craft and commitment to quality have been the cornerstone of my career.</p>
+                <p class="fs-5 text-justify" style="line-height: 1.8;">
+                    I am Murali, a goldsmith with over 25 years of experience in crafting exquisite gold and silver jewelry. Based in Nagercoil, Kanyakumari, I specialize in all kinds of gold and silver works, including traditional designs and custom creations. Additionally, I offer beautiful Malai collections and serve customers across India. My passion for this craft and commitment to quality have been the cornerstone of my career.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services Section -->
+
+<!-- Services Section --> 
 <section id="services" class="py-5 bg-light">
     <div class="container">
-        <h2>My Services</h2>
+        <h2 class="text-center mb-4">Our Premium Services</h2>
+        <p class="text-center text-muted">We offer a variety of top-notch services tailored to your needs, ensuring quality and satisfaction.</p>
         <div class="row mt-4">
-            <!-- Jewellery Works Card -->
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="card">
-                    <img src="img/1.png" class="card-img-top img-fluid" alt="Amrita Jewellery Works">
-                    <div class="card-body">
-                        <h5 class="card-title">Jewellery Works</h5>
-                        <p class="card-text">Custom jewellery design and repair to suit your style. <a href="#!" data-bs-toggle="modal" data-bs-target="#service1Modal">Read more</a></p>
-                    </div>
-                </div>
-            </div>
             
-            <!-- Rohini Gold Card -->
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="card">
-                    <img src="img/rohini gold.png" class="card-img-top img-fluid" alt="Rohini Gold">
-                    <div class="card-body">
-                        <h5 class="card-title">Rohini Gold</h5>
-                        <p class="card-text">Explore our exclusive collection of Rohini Gold, known for unmatched quality. <a href="#!" data-bs-toggle="modal" data-bs-target="#service2Modal">Read more</a></p>
-                    </div>
-                </div>
-            </div>
+       <!-- Jewellery Works Card -->
+<div class="col-md-6 col-sm-12 mb-4">
+    <div class="card hover-card border-0 shadow-sm" style="max-width: 300px; margin: 0 auto;">
+        <img src="img/AMRITA JEWELLER LOGO.png" class="card-img-top img-fluid" alt="Amrita Jewellery Works" style="max-height: 150px; object-fit: cover;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Jewellery Works</h5>
+            <p class="card-text">Custom jewellery design and repair to suit your style. 
+                <a href="#!" class="text-decoration-none text-primary" data-bs-toggle="modal" data-bs-target="#service1Modal">Read more</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Rohini Gold Card -->
+<div class="col-md-6 col-sm-12 mb-4">
+    <div class="card hover-card border-0 shadow-sm" style="max-width: 300px; margin: 0 auto;">
+        <img src="img/rohini gold.png" class="card-img-top img-fluid" alt="Rohini Gold" style="max-height: 150px; object-fit: cover;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Rohini Gold</h5>
+            <p class="card-text">Explore our exclusive collection of Rohini Gold, known for unmatched quality. 
+                <a href="#!" class="text-decoration-none text-primary" data-bs-toggle="modal" data-bs-target="#service2Modal">Read more</a>
+            </p>
+        </div>
+    </div>
+</div>        
         </div>
     </div>
 </section>
@@ -202,243 +219,421 @@
     </div>
 </div>
 
+<!-- Free Delivery Section -->
+<section id="free-delivery" class="py-5 bg-info text-white text-center">
+    <div class="container">
+        <h2 class="mb-4" style="font-family: 'Arial Black', sans-serif;">Highly Free Delivery All Over Tamil Nadu</h2>
+        <div>
+            <img src="img/delivery.jpg" alt="Delivery Truck" class="img-fluid" style="max-width: 300px;">
+        </div>
+        <p class="mt-3 fs-5">We ensure safe and free delivery of your precious products across Tamil Nadu!</p>
+    </div>
+</section>
 
     <!-- Works Section -->
-    <section id="works" class="py-5 bg-white">
-        <div class="container">
-            <h2>My Works</h2>
-            <section id="services" class="py-5 bg-light"
-                        <section id="services" class="py-5 bg-light">
-                            <div class="container">
-                                <h2>Our Jewelry Collection</h2>
-                                <p>Explore our exclusive collection of gold jewelry, including rings, earrings, chains, and bracelets.</p>
-                                <div class="row mt-4">
-                                    <!-- Gold Rings Card -->
-                                    <div class="col-md-3 col-sm-6 mb-4 gold">
-                                        <div class="card hover-card">
-                                            <div class="card-image">
-                                                <img src="img/gold chain.jpg" class="card-img-top img-fluid" alt="Gold Rings">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Gold Rings</h5>
-                                                <p class="card-text">Beautifully designed gold rings, perfect for any occasion.</p>
-                                                <a href="https://wa.me/8838779374" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Gold Earrings Card -->
-                                    <div class="col-md-3 col-sm-6 mb-4 gold">
-                                        <div class="card hover-card">
-                                            <div class="card-image">
-                                                <img src="img/earings.webp
-                                                " class="card-img-top img-fluid" alt="Gold Earrings">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Gold Earrings</h5>
-                                                <p class="card-text">Elegant gold earrings for every style.</p>
-                                                <a href="https://wa.me/8838779374" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Gold Chains Card -->
-                                    <div class="col-md-3 col-sm-6 mb-4 gold">
-                                        <div class="card hover-card">
-                                            <div class="card-image">
-                                                <img src="img/gold chain.jpg" class="card-img-top img-fluid" alt="Gold Chains">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Gold Chains</h5>
-                                                <p class="card-text">Exquisite gold chains designed for timeless elegance.</p>
-                                                <a href="https://wa.me/8838779374" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                        
-                                    <!-- Gold Bracelets Card -->
-                                    <div class="col-md-3 col-sm-6 mb-4 gold">
-                                        <div class="card hover-card">
-                                            <div class="card-image">
-                                                <img src="img/gold bracelets.jpg" class="card-img-top img-fluid" alt="Gold Bracelets">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Gold Bracelets</h5>
-                                                <p class="card-text">Stylish gold bracelets that add elegance to any wrist.</p>
-                                                <a href="https://wa.me/your-number" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                      
+<section id="works" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-4 gold">My Works</h2>
+        <p class="text-center fs-5">Discover the exquisite craftsmanship of our jewelry collection, specially designed to complement your unique style.</p>
+        
+        <!-- Jewelry Collection Section -->
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4 gold">Our Gold Jewelry Collection</h2>
+                <p class="text-center">Explore our exclusive collection of gold jewelry, including rings, earrings, chains, and bracelets, crafted to perfection.</p>
+                <div class="row mt-4">
 
-            <!-- Silver sections -->
-            <div class="row mt-4">
-                <!-- Silver Rings Card -->
-                <div class="col-md-3 col-sm-6 mb-4 silver">
-                    <div class="card hover-card">
-                        <div class="card-image">
-                            <img src="img/siilver rings.webp" class="card-img-top img-fluid" alt="Silver Rings">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Silver Rings</h5>
-                            <p class="card-text">Elegant silver rings, perfect for any occasion.</p>
-                            <a href="https://wa.me/your-number" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Silver Chains Card -->
-                <div class="col-md-3 col-sm-6 mb-4 silver">
-                    <div class="card hover-card">
-                        <div class="card-image">
-                            <img src="img/silver  chains.jpg" class="card-img-top img-fluid" alt="Silver Chains">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Silver Chains</h5>
-                            <p class="card-text">Exquisite silver chains designed for timeless elegance.</p>
-                            <a href="https://wa.me/your-number" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
+                    <!-- Gold Rings Card -->
+                    <div class="col-md-3 col-sm-6 mb-4 gold">
+                        <div class="card hover-card">
+                            <div class="card-image">
+                                <img src="img/gold rings.png" class="card-img-top img-fluid rounded" alt="Gold Rings">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title gold">Gold Rings</h5>
+                                <p class="card-text">Beautifully designed gold rings, perfect for any occasion.</p>
+                                <a href="https://wa.me/8838779374" class="btn btn-success gold-btn" target="_blank">Enquire on WhatsApp</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            
-                <!-- Silver Kaapu Card -->
-                <div class="col-md-3 col-sm-6 mb-4 silver">
-                    <div class="card hover-card">
-                        <div class="card-image">
-                            <img src="img/silver  kaaapu.webp" class="card-img-top img-fluid" alt="Silver Kaapu">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Silver Kaapu</h5>
-                            <p class="card-text">Traditional silver Kaapu designed to bring luck and prosperity.</p>
-                            <a href="https://wa.me/your-number" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
+
+              <!-- Gold Earrings Card -->
+<div class="col-md-3 col-sm-6 mb-4 gold">
+    <div class="card hover-card h-100">
+        <div class="card-image">
+            <img src="img/earings.webp" class="card-img-top img-fluid rounded" alt="Gold Earrings">
+        </div>
+        <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title gold">Gold Earrings</h5>
+            <p class="card-text flex-grow-1">Elegant gold earrings for every style.</p>
+            <a href="https://wa.me/8838779374" class="btn btn-success gold-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+                    <!-- Gold Chains Card -->
+                    <div class="col-md-3 col-sm-6 mb-4 gold">
+                        <div class="card hover-card">
+                            <div class="card-image">
+                                <img src="img/gold chain.jpg" class="card-img-top img-fluid rounded" alt="Gold Chains">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title gold">Gold Chains</h5>
+                                <p class="card-text">Exquisite gold chains designed for timeless elegance.</p>
+                                <a href="https://wa.me/8838779374" class="btn btn-success gold-btn" target="_blank">Enquire on WhatsApp</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            
-                <!-- Silver Bracelets Card -->
-                <div class="col-md-3 col-sm-6 mb-4 silver">
-                    <div class="card hover-card">
-                        <div class="card-image">
-                            <img src="img/silver bracelets.jpg" class="card-img-top img-fluid" alt="Silver Bracelets">
+
+                    <!-- Gold Bracelets Card -->
+                    <div class="col-md-3 col-sm-6 mb-4 gold">
+                        <div class="card hover-card">
+                            <div class="card-image">
+                                <img src="img/gold bracelets.jpg" class="card-img-top img-fluid rounded" alt="Gold Bracelets">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title gold">Gold Bracelets</h5>
+                                <p class="card-text">Stylish gold bracelets that add elegance to any wrist.</p>
+                                <a href="https://wa.me/8838779374" class="btn btn-success gold-btn" target="_blank">Enquire on WhatsApp</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Silver Bracelets</h5>
-                            <p class="card-text">Stylish silver bracelets that add elegance to any wrist.</p>
-                            <a href="https://wa.me/your-number" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-         <!-- copper sectiuons -->
-         <div class="row mt-4">
-            <!-- Copper Rings Card -->
-            <div class="col-md-3 col-sm-6 mb-4 copper">
-                <div class="card hover-card">
-                    <div class="card-image">
-                        <img src="img/copper rings.jpg" class="card-img-top img-fluid" alt="Copper Rings">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Copper Rings</h5>
-                        <p class="card-text">Stylish copper rings, designed to add charm to your style.</p>
-                        <a href="https://wa.me/your-number" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
-    
-            <!-- Copper Kaapu Card -->
-            <div class="col-md-3 col-sm-6 mb-4 copper">
-                <div class="card hover-card">
+        </section>
+    </div>
+</section>
+                     
+            <!-- Silver Section -->
+<section id="silver" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4 silver">Our Silver Jewelry Collection</h2>
+        <p class="text-center">Discover the elegance and charm of our handcrafted silver jewelry, including rings, chains, kaapu, and bracelets.</p>
+        <div class="row mt-4">
+            <!-- Silver Rings Card -->
+            <div class="col-md-3 col-sm-6 mb-4 silver">
+                <div class="card hover-card h-100">
                     <div class="card-image">
-                        <img src="img/copper kada.webp" class="card-img-top img-fluid" alt="Copper Kaapu">
+                        <img src="img/siilver rings.webp" class="card-img-top img-fluid rounded" alt="Silver Rings">
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Copper Kaapu</h5>
-                        <p class="card-text">Traditional copper Kaapu, designed for protection and good fortune.</p>
-                        <a href="https://wa.me/your-number" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title silver">Silver Rings</h5>
+                        <p class="card-text flex-grow-1">Elegant silver rings, perfect for any occasion.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success silver-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Silver Chains Card -->
+            <div class="col-md-3 col-sm-6 mb-4 silver">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/silver  chains.jpg" class="card-img-top img-fluid rounded" alt="Silver Chains">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title silver">Silver Chains</h5>
+                        <p class="card-text flex-grow-1">Exquisite silver chains designed for timeless elegance.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success silver-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Silver Kaapu Card -->
+            <div class="col-md-3 col-sm-6 mb-4 silver">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/silver  kaaapu.webp" class="card-img-top img-fluid rounded" alt="Silver Kaapu">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title silver">Silver Kaapu</h5>
+                        <p class="card-text flex-grow-1">Traditional silver Kaapu designed to bring luck and prosperity.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success silver-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Silver Bracelets Card -->
+            <div class="col-md-3 col-sm-6 mb-4 silver">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/silver bracelets.jpg" class="card-img-top img-fluid rounded" alt="Silver Bracelets">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title silver">Silver Bracelets</h5>
+                        <p class="card-text flex-grow-1">Stylish silver bracelets that add elegance to any wrist.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success silver-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
+         <!-- Copper Section -->
+<section id="copper" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4 copper">Our Copper Jewelry Collection</h2>
+        <p class="text-center copper">Explore our handcrafted copper jewelry, including chains, rings, kaapu, and bracelets, designed for elegance and utility.</p>
+        <div class="row mt-4">
+
+            <!-- Copper Chains Card -->
+            <div class="col-md-3 col-sm-6 mb-4 copper">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/copper chains.avif" class="card-img-top img-fluid rounded" alt="Copper Chains">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title copper">Copper Chains</h5>
+                        <p class="card-text flex-grow-1 copper">Elegant copper chains, perfect for any occasion.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success copper-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copper Rings Card -->
+            <div class="col-md-3 col-sm-6 mb-4 copper">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/copper rings.jpg" class="card-img-top img-fluid rounded" alt="Copper Rings">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title copper">Copper Rings</h5>
+                        <p class="card-text flex-grow-1 copper">Exquisite copper rings designed for timeless elegance.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success copper-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copper Kaapu Card -->
+            <div class="col-md-3 col-sm-6 mb-4 copper">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/copper kada.webp" class="card-img-top img-fluid rounded" alt="Copper Kaapu">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title copper">Copper Kaapu</h5>
+                        <p class="card-text flex-grow-1 copper">Traditional copper Kaapu designed to bring luck and prosperity.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success copper-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copper Bracelets Card -->
+            <div class="col-md-3 col-sm-6 mb-4 copper">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/copper bracelets.jpg" class="card-img-top img-fluid rounded" alt="Copper Bracelets">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title copper">Copper Bracelets</h5>
+                        <p class="card-text flex-grow-1 copper">Stylish copper bracelets that add elegance to any wrist.</p>
+                        <a href="https://wa.me/your-number" class="btn btn-success copper-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
         <!-- Malai sections  -->
 
                 <!-- <div class="product-section">
                     <h3>Our Malai sections</h3>
                     <p>We offer a variety of malais crafted with different materials such as:</p> -->
 
-                    <section id="services" class="py-5 bg-light">
-                        <div class="container">
-                            <h2>Our Shop Malai Collection</h2>
-                            <p>"Discover the divine harmony of our handcrafted Malai collection, designed to bring positivity, peace, and balance to your life. Each mala—whether made from sacred Rudraksha, aromatic Sandalwood, grounding Karungalii, or vibrant Gemstones—is a symbol of spirituality and elegance. Perfect for meditation, healing, or simply as a meaningful accessory, these malas are crafted with care and intention to resonate with your unique energy..</p>
-                            <div class="row mt-4">
-                                
-                                <!-- Sandalwood Malai Card -->
-                                <div class="col-md-3 col-sm-6 mb-4 sandalwood">
-                                    <div class="card hover-card">
-                                        <div class="card-image">
-                                            <img src="img/sandalwood.jpg" class="card-img-top img-fluid" alt="Sandalwood Malai">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Sandalwood Malai</h5>
-                                            <p class="card-text">Traditional sandalwood mala, available in various sizes (4mm, 6mm, 8mm, 10mm).</p>
-                                            <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Sandalwood%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                        </div>
-                                    </div>
+                   <!-- Malai Collection Section -->
+<section id="malai" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4 malai-title">Our Shop Malai Collection</h2>
+        <p class="text-center malai-description">
+            "Discover the divine harmony of our handcrafted Malai collection, designed to bring positivity, peace, and balance to your life. 
+            Each mala whether made from sacred Rudraksha, aromatic Sandalwood, grounding Karungalii, or vibrant Gemstones is a symbol of spirituality and elegance. 
+            Perfect for meditation, healing, or simply as a meaningful accessory, these malas are crafted with care and intention to resonate with your unique energy."
+        </p>
+        <div class="row mt-4">
+            
+            <!-- Sandalwood Malai Card -->
+            <div class="col-md-3 col-sm-6 mb-4 malai sandalwood">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/sandalwood.jpg" class="card-img-top img-fluid rounded" alt="Sandalwood Malai">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title malai">Sandalwood Malai</h5>
+                        <p class="card-text flex-grow-1">Traditional sandalwood mala, available in various sizes (4mm, 6mm, 8mm, 10mm).</p>
+                        <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Sandalwood%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" 
+                           class="btn btn-success malai-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Karungalii Malai Card -->
+            <div class="col-md-3 col-sm-6 mb-4 malai karungalii">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/karungali.webp" class="card-img-top img-fluid rounded" alt="Karungalii Malai">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title malai">Karungalii Malai</h5>
+                        <p class="card-text flex-grow-1">Handcrafted karungalii mala, available in different sizes (4mm, 6mm, 8mm, 10mm).</p>
+                        <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Karungalii%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" 
+                           class="btn btn-success malai-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rudraksha Malai Card -->
+            <div class="col-md-3 col-sm-6 mb-4 malai rudraksha">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/rudrasha.jpg" class="card-img-top img-fluid rounded" alt="Rudraksha Malai">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title malai">Rudraksha Malai</h5>
+                        <p class="card-text flex-grow-1">Sacred rudraksha mala, customizable in sizes (4mm, 6mm, 8mm, 10mm).</p>
+                        <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Rudraksha%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" 
+                           class="btn btn-success malai-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gemstone Malai Card -->
+            <div class="col-md-3 col-sm-6 mb-4 malai gemstone">
+                <div class="card hover-card h-100">
+                    <div class="card-image">
+                        <img src="img/spadikam.jpg" class="card-img-top img-fluid rounded" alt="Gemstone Malai">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title malai">Gemstone Malai</h5>
+                        <p class="card-text flex-grow-1">Beautiful gemstone mala, available in your choice of size (4mm, 6mm, 8mm, 10mm).</p>
+                        <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Gemstone%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" 
+                           class="btn btn-success malai-btn mt-auto" target="_blank">Enquire on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- karungali malai products  -->
+            <section id="karungali-products" class="py-5 bg-light"> 
+                <div class="container">
+                    <h2 class="text-center mb-4" style="font-family: 'Arial Black', sans-serif; color: #4A4A4A;">Karungali Products</h2>
+                    <p class="text-center text-muted">
+                        Karungali wood is renowned for its spiritual properties, helping to dispel negativity and inspire positive energy.
+                    </p>
+                    <div class="row g-3">
+                        
+                        <!-- Vel Card -->
+                        <div class="col-6 col-md-4">
+                            <div class="card h-100 shadow-sm border-0" style="transition: transform 0.2s;">
+                                <img src="img/vel karungali.jpg" class="card-img-top img-fluid" alt="Vel">
+                                <div class="card-body text-center p-2">
+                                    <h6 class="card-title">Vel</h6>
+                                    <p class="card-text small">Exquisite Karungali Vel with intricate carvings, symbolizing protection.</p>
+                                    <a href="https://wa.me/<YOUR_PHONE_NUMBER>?text=Hi,%20I%20am%20interested%20in%20the%20Karungali%20Vel." 
+                                       class="btn btn-success btn-sm mt-2" target="_blank">
+                                        WhatsApp Inquiry
+                                    </a>
                                 </div>
-                    
-                                <!-- Karungalii Malai Card -->
-                                <div class="col-md-3 col-sm-6 mb-4 karungalii">
-                                    <div class="card hover-card">
-                                        <div class="card-image">
-                                            <img src="img/karungali.webp" class="card-img-top img-fluid" alt="Karungalii Malai">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Karungalii Malai</h5>
-                                            <p class="card-text">Handcrafted karungalii mala, available in different sizes (4mm, 6mm, 8mm, 10mm).</p>
-                                            <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Karungalii%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <!-- Rudraksha Malai Card -->
-                                <div class="col-md-3 col-sm-6 mb-4 rudraksha">
-                                    <div class="card hover-card">
-                                        <div class="card-image">
-                                            <img src="img/rudrasha.jpg" class="card-img-top img-fluid" alt="Rudraksha Malai">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Rudraksha Malai</h5>
-                                            <p class="card-text">Sacred rudraksha mala, customizable in sizes (4mm, 6mm, 8mm, 10mm).</p>
-                                            <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Rudraksha%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <!-- Gemstone Malai Card -->
-                                <div class="col-md-3 col-sm-6 mb-4 gemstone">
-                                    <div class="card hover-card">
-                                        <div class="card-image">
-                                            <img src="img/spadikam.jpg" class="card-img-top img-fluid" alt="Gemstone Malai">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Gemstone Malai</h5>
-                                            <p class="card-text">Beautiful gemstone mala, available in your choice of size (4mm, 6mm, 8mm, 10mm).</p>
-                                            <a href="https://wa.me/8838779374?text=I%20would%20like%20to%20customize%20a%20Gemstone%20Malai%20in%20Gold%2F%20Silver%2F%20Copper%2E%20Size%3A%204mm%2F%206mm%2F%208mm%2F%2010mm" class="btn btn-success" target="_blank">Enquire on WhatsApp</a>
-                                        </div>
-                                    </div>
-                                </div>
-                    
                             </div>
                         </div>
-                    </section>
+                        
+                        <!-- Amman Statue Card -->
+                        <div class="col-6 col-md-4">
+                            <div class="card h-100 shadow-sm border-0" style="transition: transform 0.2s;">
+                                <img src="img/amman karungali.jpg" class="card-img-top img-fluid" alt="Amman Statue">
+                                <div class="card-body text-center p-2">
+                                    <h6 class="card-title">Amman Statue</h6>
+                                    <p class="card-text small">Beautiful Amman statue made from Karungali wood for spiritual connection.</p>
+                                    <a href="https://wa.me/<YOUR_PHONE_NUMBER>?text=Hi,%20I%20am%20interested%20in%20the%20Amman%20Statue." 
+                                       class="btn btn-success btn-sm mt-2" target="_blank">
+                                        WhatsApp Inquiry
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Murugar Statue Card -->
+                        <div class="col-6 col-md-4">
+                            <div class="card h-100 shadow-sm border-0" style="transition: transform 0.2s;">
+                                <img src="img/murugar karungali.jpg" class="card-img-top img-fluid" alt="Murugar Statue">
+                                <div class="card-body text-center p-2">
+                                    <h6 class="card-title">Murugar Statue</h6>
+                                    <p class="card-text small">Intricately crafted Karungali Murugar statue to inspire strength and positivity.</p>
+                                    <a href="https://wa.me/<YOUR_PHONE_NUMBER>?text=Hi,%20I%20am%20interested%20in%20the%20Murugar%20Statue." 
+                                       class="btn btn-success btn-sm mt-2" target="_blank">
+                                        WhatsApp Inquiry
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Repeat for other products -->
+                        <!-- Pillaiyar Statue Card -->
+                        <div class="col-6 col-md-4">
+                            <div class="card h-100 shadow-sm border-0" style="transition: transform 0.2s;">
+                                <img src="img/pillaiyar karungali.webp" class="card-img-top img-fluid" alt="Pillaiyar Statue">
+                                <div class="card-body text-center p-2">
+                                    <h6 class="card-title">Pillaiyar Statue</h6>
+                                    <p class="card-text small">Elegant Karungali Pillaiyar statue to remove obstacles and bring wisdom.</p>
+                                    <a href="https://wa.me/<YOUR_PHONE_NUMBER>?text=Hi,%20I%20am%20interested%20in%20the%20Pillaiyar%20Statue." 
+                                       class="btn btn-success btn-sm mt-2" target="_blank">
+                                        WhatsApp Inquiry
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Add WhatsApp buttons for Bracelets and Chains similarly -->
+                        
                     </div>
+                </div>
+            </section>
+
+            
+            <section id="karungali-uses" class="py-5 bg-dark text-light">
+                <div class="container">
+                    <h2 class="text-center mb-4" style="font-family: 'Arial Black', sans-serif; color: #FFD700;">Karungali Class Uses</h2>
+                    <p class="text-center mb-4" style="font-size: 1.1rem;">
+                        Karungali wood is revered for its spiritual and healing properties. It has been used in traditional practices for centuries to bring positive energy, dispel negativity, and promote inner peace.
+                    </p>
+                    <div class="row text-center">
+                        <!-- Use Case 1 -->
+                        <div class="col-md-4">
+                            <div class="card bg-light text-dark mb-3 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Removes Negative Thoughts</h5>
+                                    <p class="card-text small">Karungali helps eliminate negative energy and replace it with positivity and clarity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Use Case 2 -->
+                        <div class="col-md-4">
+                            <div class="card bg-light text-dark mb-3 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Promotes Inner Peace</h5>
+                                    <p class="card-text small">Its spiritual properties help calm the mind, making it ideal for meditation and prayer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Use Case 3 -->
+                        <div class="col-md-4">
+                            <div class="card bg-light text-dark mb-3 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Protective Energy</h5>
+                                    <p class="card-text small">Karungali items are often used as talismans to safeguard against negativity and harm.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-        
+                </div>
+            </section>
+            
+    
     <!-- Gallery Section -->
     <section id="gallery" class="py-5 bg-secondary text-white">
         <div class="container">
@@ -446,26 +641,59 @@
             <p>Explore our beautiful creations.</p>
         </div>
     </section>
+   
+    <!-- contact form -->
+    <form 
+            action="https://formspree.io/f/mdkkgqyl" 
+            method="POST" 
+            class="p-4 rounded shadow bg-white" 
+            style="max-width: 600px; margin: 0 auto; font-family: 'Verdana', sans-serif;"
+        >
+            <!-- Name Field -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    class="form-control" 
+                    placeholder="Enter your name" 
+                    required 
+                >
+            </div>
+            <!-- Email Field -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form-control" 
+                    placeholder="Enter your email" 
+                    required 
+                >
+            </div>
+            <!-- Message Field -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    class="form-control" 
+                    rows="4" 
+                    placeholder="Write your message here" 
+                    required
+                ></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-info text-white w-100">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2>Contact</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+<!-- locations maps -->
             <div class="mt-4">
                 <h3>Our Location</h3>
                 <iframe 
@@ -484,29 +712,28 @@
             <!-- Owner Information -->
             <div class="col-md-4 text-center text-md-start mb-3">
                 <h5>Owner Information</h5>
-                <p><strong>Owner:</strong> Amrita Jewellery</p>
+                <p><strong>Owner:</strong> MURALI A.P</p>
                 <p><strong>Address:</strong> 123 Gold Street, Jewel City, IN-456789</p>
                 <p><strong>Contact:</strong> +91 9876543210</p>
                 <p><strong>Email:</strong> info@amritajewellery.com</p>
             </div>
 
-            <!-- Subscription Form -->
-            <div class="col-md-4 text-center mb-3">
-                <h5>Subscribe to Our Newsletter</h5>
-                <p>Stay updated with our latest collections and offers.</p>
-                <form action="#" method="post">
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email" required>
-                        <button class="btn btn-warning" type="submit">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-
+         <!-- Subscription Form -->
+         <div class="col-md-4 text-center mb-3">
+            <h5>Subscribe to Our Newsletter</h5>
+            <p>Stay updated with our latest collections and offers.</p>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <button class="btn btn-warning" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
             <!-- Social Media & Additional Info -->
             <div class="col-md-4 text-center text-md-end">
                 <h5>Follow Us</h5>
-                <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61571440762793&mibextid=ZbWKwL" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/amrita.jewellery/profilecard/?igsh=bHl2ZzFjdnZ3Mngw" class="text-white me-2"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
                 <p class="mt-3">
@@ -525,15 +752,15 @@
 </footer>
 
 <!-- WhatsApp Integration -->
-    <a href="https://wa.me/8838779374" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<a href="https://wa.me/918838779374" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
 
-    <!-- Bootstrap CSS -->
+<!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap JS -->

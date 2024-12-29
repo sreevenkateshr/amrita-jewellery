@@ -260,6 +260,43 @@
     padding: 10px 15px;
 }
 
+/* 2 gold  */
+/* General Gold Styling */
+.gold {
+    color: goldenrod !important;
+    font-weight: bold;
+}
+
+.gold-btn {
+    background-color: goldenrod !important;
+    border-color: goldenrod !important;
+    color: white !important;
+}
+
+.gold-btn:hover {
+    background-color: #daa520 !important;
+    border-color: #daa520 !important;
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card-image img {
+    border-radius: 8px;
+}
+
+.card-body .gold {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Silver Sectionss */
 /* Center the heading and description */
 .silver-text-center {
@@ -390,6 +427,50 @@
     border-color: #128C7E;
 }
 
+/* 2 silver sections */
+/* Silver Styling */
+.silver {
+    color: silver !important;
+    font-weight: bold;
+}
+
+.silver-btn {
+    background-color: silver !important;
+    border-color: silver !important;
+    color: black !important;
+}
+
+.silver-btn:hover {
+    background-color: #dcdcdc !important;
+    border-color: #dcdcdc !important;
+    color: black !important;
+}
+
+/* Uniform Styling for Cards */
+.hover-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-image img {
+    border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+
 /* Copper sections */
 /* Ensuring all images inside the copper cards are the same size */
 .copper .card-img-top {
@@ -438,4 +519,156 @@
 .copper .btn-success:hover {
     background-color: #128C7E;
     border-color: #128C7E;
+} 
+
+
+
+/* 2 copper sections */
+/* Copper Styling */
+.copper {
+    color: #b87333 !important; /* Copper color */
+    font-weight: bold;
 }
+
+.copper-btn {
+    background-color: #b87333 !important;
+    border-color: #b87333 !important;
+    color: white !important;
+}
+
+.copper-btn:hover {
+    background-color: #d9904d !important;
+    border-color: #d9904d !important;
+    color: white !important;
+}
+
+/* Uniform Styling for Cards */
+.hover-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-image img {
+    border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+
+/* Contact Section Styles */
+#contact {
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+form .form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 4px rgba(23, 162, 184, 0.75);
+}
+
+form .btn {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* forms */
+/* body {
+    background: linear-gradient(135deg, #f0f4ff, #d9e7ff);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.custom-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.custom-form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-form .form-control {
+    border: 2px solid #d9e7ff;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.custom-form .form-control:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.custom-form .btn-primary {
+    background: linear-gradient(135deg, #6c63ff, #4a90e2);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.custom-form .btn-primary:hover {
+    background: linear-gradient(135deg, #4a90e2, #6c63ff);
+}
+
+.custom-form .btn-primary:active {
+    background: #4a90e2;
+} */
