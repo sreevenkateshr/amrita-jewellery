@@ -1,7 +1,340 @@
+/* Apply Cinzel font to title */
+title {
+font-family: 'Cinzel', serif;
+}
+
+ /* Apply Cinzel font to the entire navigation bar */
+ .navbar-brand, 
+ .nav-link {
+     font-family: 'Cinzel', serif;
+ }
+/* Apply Cinzel font to carousel captions */
+#homeCarousel .carousel-caption h5 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#homeCarousel .carousel-caption p {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Apply Cinzel font to the section */
+#rates {
+    font-family: 'Cinzel', serif;
+}
+
+/* Additional styling for headings */
+#rates h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#rates .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#rates .card-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/* Apply Cinzel font to the section */
+#about {
+    font-family: 'Cinzel', serif;
+}
+
+/* Styling for the section heading */
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph styling */
+#about p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Styling for the image */
+#about img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ /* Apply Cinzel font to the section */
+ #services {
+    font-family: 'Cinzel', serif;
+}
+
+/* Heading styling */
+#services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Paragraph styling */
+#services p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Card title styling */
+#services .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Card text styling */
+#services .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Apply Cinzel font to modal content */
+.modal-title, .modal-body {
+    font-family: 'Cinzel', serif;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Apply Cinzel font to free-delivery section */
+#free-delivery {
+    font-family: 'Cinzel', serif;
+}
+
+#free-delivery h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#free-delivery p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Apply Cinzel font to the entire works section */
+#works, #services {
+    font-family: 'Cinzel', serif;
+}
+
+#works h2, #services h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#works p, #services p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+#works .card-title, #services .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#works .card-text, #services .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ /* Apply Cinzel font to the entire silver jewelry section */
+ #silver {
+    font-family: 'Cinzel', serif;
+}
+
+#silver h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#silver p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+#silver .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#silver .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Apply Cinzel font to the entire copper jewelry section */
+#copper {
+    font-family: 'Cinzel', serif;
+}
+
+#copper h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#copper p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+#copper .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#copper .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ /* Apply Cinzel font to the entire malai section */
+ #malai {
+    font-family: 'Cinzel', serif;
+}
+
+#malai h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#malai p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+#malai .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#malai .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ /* Apply Cinzel font to the entire section */
+ #karungali-uses {
+    font-family: 'Cinzel', serif;
+}
+
+#karungali-uses h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+#karungali-uses p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#karungali-uses .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#karungali-uses .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ /* Apply Cinzel font to the entire section */
+ #karungali {
+    font-family: 'Cinzel', serif;
+}
+
+#karungali h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4A4A4A;
+}
+
+#karungali p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+#karungali .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#karungali .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ /* Apply Cinzel font to the entire section */
+ #gallery {
+    font-family: 'Cinzel', serif;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#gallery p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#gallery .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-body p {
+    font-family: 'Cinzel', serif;
+}
+
+
+
 /* navbar */
 .navbar:hover {
     transform: translateY(-2px);
     transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse {
+        display: block !important;
+    }
+}
+
+.navbar-collapse {
+    transition: all 0.2s ease;
+}
+
+/* Ensure the navbar stays sticky */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
 }
 
 /* rate sections */
@@ -297,6 +630,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .gold {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
+
+
 /* Silver Sectionss */
 /* Center the heading and description */
 .silver-text-center {
@@ -373,6 +714,7 @@
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
