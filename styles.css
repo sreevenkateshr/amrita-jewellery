@@ -8,6 +8,7 @@ font-family: 'Cinzel', serif;
  .nav-link {
      font-family: 'Cinzel', serif;
  }
+
 /* Apply Cinzel font to carousel captions */
 #homeCarousel .carousel-caption h5 {
     font-family: 'Cinzel', serif;
@@ -58,6 +59,27 @@ font-family: 'Cinzel', serif;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.8;
+}
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity with the alpha value (0.5 here) */
+    z-index: 1;
+}
+
+#about {
+    background: url('img/BG\ ABOUT.jpg') no-repeat center center/cover;
+    position: relative;
+    z-index: 2;
+}
+
+#about .container {
+    position: relative;
+    z-index: 3;
 }
 
 /* Styling for the image */
@@ -230,6 +252,58 @@ font-family: 'Cinzel', serif;
     font-size: 1rem;
     font-weight: 400;
 }
+/* General styling for the Karungali section */
+#karungali h2 {
+    font-size: 1.75rem;
+}
+
+#karungali p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Card adjustments */
+#karungali .card {
+    transition: transform 0.2s ease-in-out;
+}
+
+#karungali .card:hover {
+    transform: translateY(-5px);
+}
+
+#karungali .card-title {
+    font-size: 1rem;
+}
+
+#karungali .card-text {
+    font-size: 0.9rem;
+}
+
+#karungali .btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 576px) {
+    #karungali h2 {
+        font-size: 1.5rem;
+    }
+
+    #karungali .card-title {
+        font-size: 0.9rem;
+    }
+
+    #karungali .card-text {
+        font-size: 0.8rem;
+    }
+
+    #karungali .btn {
+        font-size: 0.75rem;
+    }
+}
 
  /* Apply Cinzel font to the entire section */
  #karungali-uses {
@@ -308,10 +382,59 @@ font-family: 'Cinzel', serif;
     font-family: 'Cinzel', serif;
 }
 
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+  #gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto; /* Allows scrolling */
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 576px) {
+    #gallery .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* sliders */
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Optional: ensures images cover the area nicely */
+}
+@media (max-width: 768px) {
+    #home {
+        padding: 0; /* Remove unnecessary padding */
+        margin: 0; /* Remove unnecessary margin */
+    }
 
+    .carousel-inner img {
+        object-fit: cover; /* Maintain image aspect ratio */
+    }
+}
+
+/* Default Carousel Styling (For Larger Screens) */
+.carousel-item img {
+    object-fit: cover; /* Ensures images fill the container */
+}
+
+/* Mobile View - Apply Zoom Effect */
+@media (max-width: 768px) {
+    .carousel-item img {
+        transform: scale(1.2); /* Zoom-in effect */
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+    
 
 /* navbar */
-.navbar:hover {
+/* .navbar:hover {
     transform: translateY(-2px);
     transition: transform 0.3s ease-in-out;
 }
@@ -327,15 +450,15 @@ font-family: 'Cinzel', serif;
 
 .navbar-collapse {
     transition: all 0.2s ease;
-}
+} */
 
 /* Ensure the navbar stays sticky */
-.navbar {
+/* .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 0;
-}
+} */
 
 /* rate sections */
 #rates {
@@ -373,6 +496,54 @@ font-family: 'Cinzel', serif;
     flex-wrap: wrap; /* Ensures the items wrap to the next line when needed */
     justify-content: space-between; /* Distribute space evenly between items */
     gap: 20px; /* Adds space between each product */
+}
+#malai .malai-title {
+    font-size: 1.75rem;
+}
+
+#malai .malai-description {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Card adjustments for responsiveness */
+#malai .malai {
+    margin-bottom: 1.5rem;
+}
+
+#malai .card-img-top {
+    object-fit: cover;
+}
+
+/* Ensure proper spacing and text alignment */
+#malai .card-text {
+    font-size: 0.9rem;
+}
+
+#malai .malai-btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+}
+
+/* Adjustments for smaller devices */
+@media (max-width: 576px) {
+    #malai .malai-title {
+        font-size: 1.5rem;
+    }
+
+    #malai .card-title {
+        font-size: 1rem;
+    }
+
+    #malai .card-text {
+        font-size: 0.8rem;
+    }
+
+    #malai .malai-btn {
+        font-size: 0.75rem;
+    }
 }
 
 /* Individual product item styling */
@@ -494,148 +665,132 @@ font-family: 'Cinzel', serif;
     }
 }
 
-/* Gold sections */
-
-/* Styling for the .gold class */
-/* Ensuring all images inside the cards are the same size */
-.gold .card-img-top {
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* This ensures the image covers the area of the img element without distortion */
-    width: 100%; /* Makes sure the images stretch to fill the width of the container */
-}
-
-/* Card styles */
+/* General Styles for Gold Cards */
 .gold .card {
     border: 1px solid #ddd;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Prevent content from spilling out */
 }
 
 .gold .card:hover {
-    transform: translateY(-10px); /* Card moves up slightly on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adding shadow for hover effect */
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Card Image */
+.gold .card-img-top {
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Prevent distortion */
+    width: 100%; /* Full width */
+    border-radius: 8px; /* Slight rounding for a better look */
+}
+
+/* Card Body */
 .gold .card-body {
     padding: 15px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between items */
+    height: 100%;
 }
 
+/* Card Title */
 .gold .card-title {
-    font-size: 18px;
+    font-size: 1.25rem; /* Adjust font size */
     font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase; /* Make title stand out */
 }
 
+/* Card Text */
 .gold .card-text {
-    font-size: 14px;
+    font-size: 1rem;
     color: #555;
+    margin-bottom: 1rem;
 }
 
-/* Button style for WhatsApp enquiry */
+/* Button Style */
 .gold .btn-success {
-    background-color: #25D366; /* WhatsApp color */
+    background-color: #25D366; /* WhatsApp green */
     border-color: #25D366;
     color: white;
     padding: 10px 15px;
-    text-align: center;
-    display: inline-block;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 .gold .btn-success:hover {
     background-color: #128C7E;
     border-color: #128C7E;
 }
-/* Styling for Gold Cards */
 
-/* Gold Card container */
-.gold-card {
-    height: 100%;
-}
-
-/* Gold Hover Effect */
-.gold-hover-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gold-hover-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Fixed height for the gold card body */
-.gold-card-body {
-    height: 200px; /* Adjust based on your design */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* Gold Card Image size */
-.gold-card-img {
-    height: 200px; /* Adjust the height of images */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-/* Gold Card Title */
-.gold-card-title {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
-
-/* Gold Card Text */
-.gold-card-text {
-    flex-grow: 1; /* Allow text content to expand but not push the button out */
-}
-
-/* Gold Button (WhatsApp) */
-.gold-btn {
-    margin-top: auto; /* Make sure button is at the bottom of the card */
-    padding: 10px 15px;
-}
-
-/* 2 gold  */
-/* General Gold Styling */
-.gold {
-    color: goldenrod !important;
-    font-weight: bold;
-}
-
-.gold-btn {
-    background-color: goldenrod !important;
-    border-color: goldenrod !important;
-    color: white !important;
-}
-
-.gold-btn:hover {
-    background-color: #daa520 !important;
-    border-color: #daa520 !important;
-}
-
-.hover-card:hover {
+/* Hover Effects */
+.gold .hover-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
 }
 
-.card-image img {
-    border-radius: 8px;
-}
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    /* Adjust card body for smaller screens */
+    .gold .card-body {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 
-.card-body .gold {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
+    .gold .btn-success {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
 
-.shadow {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    .gold .card-title {
+        font-size: 1rem;
+    }
+
+    .gold .card-text {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .gold {
-        width: 100% !important;
-        flex: 0 0 100% !important;
+    /* Full-width cards on smaller devices */
+    .gold .card {
+        margin-bottom: 20px;
+    }
+
+    .gold .btn-success {
+        font-size: 0.8rem;
+        padding: 6px 10px;
     }
 }
+/* Gold Button Style */
+.gold .btn-success {
+    background-color: goldenrod; /* Gold background color */
+    border-color: goldenrod; /* Matching border color */
+    color: white; /* White text color for contrast */
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.gold .btn-success:hover {
+    background-color: #daa520; /* Darker gold on hover */
+    border-color: #daa520;
+    transform: translateY(-3px); /* Subtle lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+}
+@media (max-width: 768px) {
+    .gold .btn-success {
+        font-size: 0.9rem; /* Slightly smaller font */
+        padding: 8px 12px; /* Adjust padding */
+    }
+}
+
 
 
 /* Silver Sectionss */
@@ -955,6 +1110,7 @@ form .btn {
     border-radius: 8px;  /* Keeps the rounded corners */
 }
 
+
 /* logo */
 .logo-img {
     width: 100px; /* Set width */
@@ -962,10 +1118,6 @@ form .btn {
     border-radius: 50%; /* Makes the image round */
     object-fit: cover; /* Ensures the image covers the circle without distortion */
 }
-
-
-
-
 
 
 

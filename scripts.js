@@ -41,3 +41,25 @@ async function getRates() {
 getRates();
 
 
+
+// nav bar 
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarCollapse = document.getElementById('navbarNav');
+    const closeNavbarBtn = document.getElementById('closeNavbar');
+
+    // Show the close button when the navbar is expanded
+    navbarCollapse.addEventListener('show.bs.collapse', function () {
+        closeNavbarBtn.style.display = 'block';
+    });
+
+    // Hide the close button when the navbar is collapsed
+    navbarCollapse.addEventListener('hide.bs.collapse', function () {
+        closeNavbarBtn.style.display = 'none';
+    });
+
+    // Add event listener to the close button
+    closeNavbarBtn.addEventListener('click', function () {
+        const collapseInstance = bootstrap.Collapse.getInstance(navbarCollapse);
+        collapseInstance.hide(); // Programmatically close the navbar
+    });
+});
